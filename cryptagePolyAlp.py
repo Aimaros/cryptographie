@@ -4,7 +4,10 @@ import os
 def detection(message, cle):
     cles = {}
     indice = 0
+    space_cle=''
     for letter in cle:
+        if letter == ' ':
+            space_cle += ' '
         cles[indice] = ord(letter)-65
         #print(ord(letter)-65)
         indice += 1
