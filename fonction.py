@@ -1,6 +1,3 @@
-#coding:utf-8
-import os
-
 def detection(message, cle):
     cles = {}
     indice = 0
@@ -30,14 +27,3 @@ def detection(message, cle):
             indexe += 1
     return cryptage
     
-#detection('BONJOUR','FEU')
-
-message = input("Entrer votre message :")
-message = message.upper()
-
-cle = input("Entrer la cle de cryptage :")
-cle = cle.upper()
-print(detection(message, cle))
-    
-
-os.system("pause")
